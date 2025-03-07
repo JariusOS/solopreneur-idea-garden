@@ -11,6 +11,7 @@ import Categories from "./pages/Categories";
 import Community from "./pages/Community";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import Waitlist from "./pages/Waitlist";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/categories" element={<Categories />} />
             <Route path="/community" element={<Community />} />
             <Route path="/about" element={<About />} />
+            <Route path="/waitlist" element={<Waitlist />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

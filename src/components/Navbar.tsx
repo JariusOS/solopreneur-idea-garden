@@ -37,9 +37,11 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-3">
           <ThemeToggle />
           <Button variant="outline">Sign In</Button>
-          <Button className="bg-gradient-purple">
-            <Zap className="h-4 w-4 mr-2" />
-            Join Waitlist
+          <Button className="bg-gradient-purple" asChild>
+            <Link to="/waitlist">
+              <Zap className="h-4 w-4 mr-2" />
+              Join Waitlist
+            </Link>
           </Button>
         </div>
 
@@ -93,9 +95,15 @@ const Navbar = () => {
               <Button variant="outline" onClick={() => setIsMenuOpen(false)}>
                 Sign In
               </Button>
-              <Button className="bg-gradient-purple" onClick={() => setIsMenuOpen(false)}>
-                <Zap className="h-4 w-4 mr-2" />
-                Join Waitlist
+              <Button 
+                className="bg-gradient-purple" 
+                onClick={() => setIsMenuOpen(false)}
+                asChild
+              >
+                <Link to="/waitlist">
+                  <Zap className="h-4 w-4 mr-2" />
+                  Join Waitlist
+                </Link>
               </Button>
             </div>
           </div>
