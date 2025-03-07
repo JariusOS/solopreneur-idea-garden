@@ -12,6 +12,7 @@ import Community from "./pages/Community";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Waitlist from "./pages/Waitlist";
+import SignIn from "./pages/SignIn";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/community" element={<Community />} />
             <Route path="/about" element={<About />} />
             <Route path="/waitlist" element={<Waitlist />} />
+            <Route path="/sign-in" element={<SignIn />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

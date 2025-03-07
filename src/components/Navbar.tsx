@@ -36,7 +36,9 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-3">
           <ThemeToggle />
-          <Button variant="outline">Sign In</Button>
+          <Button variant="outline" asChild>
+            <Link to="/sign-in">Sign In</Link>
+          </Button>
           <Button className="bg-gradient-purple" asChild>
             <Link to="/waitlist">
               <Zap className="h-4 w-4 mr-2" />
@@ -92,8 +94,12 @@ const Navbar = () => {
             </Link>
             
             <div className="flex flex-col gap-3 mt-4">
-              <Button variant="outline" onClick={() => setIsMenuOpen(false)}>
-                Sign In
+              <Button 
+                variant="outline" 
+                onClick={() => setIsMenuOpen(false)}
+                asChild
+              >
+                <Link to="/sign-in">Sign In</Link>
               </Button>
               <Button 
                 className="bg-gradient-purple" 
