@@ -15,7 +15,14 @@ const Navbar = () => {
           <div className="w-10 h-10 rounded-full bg-gradient-purple flex items-center justify-center">
             <Lightbulb className="text-white h-5 w-5" />
           </div>
-          <span className="font-bold text-xl hidden sm:inline-block">Gaiad Ideas Bank</span>
+          <span className="font-bold text-xl hidden sm:inline-block">
+            <span className="text-gaiad-purple">G</span>
+            <span className="text-gaiad-teal">A</span>
+            <span className="text-gaiad-purple">I</span>
+            <span className="text-gaiad-teal">A</span>
+            <span className="text-gaiad-purple">D</span>
+            <span className="tracking-wider ml-2 text-gradient">IDEAS BANK</span>
+          </span>
         </Link>
 
         {/* Desktop Navigation */}

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Lightbulb, Twitter, Linkedin, Github } from 'lucide-react';
@@ -13,7 +12,14 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-full bg-gradient-purple flex items-center justify-center">
                 <Lightbulb className="text-white h-5 w-5" />
               </div>
-              <span className="font-bold text-xl">Gaiad Ideas Bank</span>
+              <span className="font-bold text-xl">
+                <span className="text-gaiad-purple">G</span>
+                <span className="text-gaiad-teal">A</span>
+                <span className="text-gaiad-purple">I</span>
+                <span className="text-gaiad-teal">A</span>
+                <span className="text-gaiad-purple">D</span>
+                <span className="tracking-wider ml-2 text-gradient">IDEAS BANK</span>
+              </span>
             </Link>
             <p className="mt-4 text-muted-foreground">
               Unleashing agentic solopreneurship through daily ideas and community.
